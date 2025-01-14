@@ -99,7 +99,7 @@ const NousLandingPage = () => {
                             <img
                                 src={Stefany}
                                 alt="Stefany C. Oliveira"
-                                className="w-full h-64 object-cover rounded-t-lg"
+                                className="w-full h-96 object-cover rounded-t-lg"
                             />
                             <h3 className="text-xl font-semibold my-4 text-[#5e4031]">Stefany C. Oliveira</h3>
                             <p className="mb-4">
@@ -114,7 +114,7 @@ const NousLandingPage = () => {
                             <img
                                 src={Tatiane}
                                 alt="Tatiane"
-                                className="w-full h-64 object-cover rounded-t-lg"
+                                className="w-full h-96 object-cover rounded-t-lg"
                             />
                             <h3 className="text-xl font-semibold my-4 text-[#5e4031]">Tatiane</h3>
                             <p className="mb-4">
@@ -129,7 +129,7 @@ const NousLandingPage = () => {
                             <img
                                 src={Ketholy}
                                 alt="Modalidades de Atendimento"
-                                className="w-full h-64 object-cover rounded-t-lg"
+                                className="w-full h-96 object-cover rounded-t-lg"
                             />
                             <h3 className="text-xl font-semibold my-4 text-[#5e4031]">Kétholy R. Cervelheri</h3>
                             <p className="mb-4">
@@ -185,7 +185,7 @@ const NousLandingPage = () => {
             </section>
 
             {/* Rodapé / Contato */}
-            <footer id="contato" className="bg-[#2d2d2d] text-white py-12">
+            <footer id="contato" className="bg-[#2d2d2d] text-white py-12 mt-auto relative z-20">
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl font-bold mb-6">Entre em Contato</h2>
                     <p className="mb-4">
@@ -200,6 +200,7 @@ const NousLandingPage = () => {
                     </a>
                 </div>
             </footer>
+
         </div>
     );
 };

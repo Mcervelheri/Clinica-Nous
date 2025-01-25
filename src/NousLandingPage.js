@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import RandomBackgroundImages from './components/RandomBackgroundImages';
+import Navbar from './components/HamburguerMenu';
 import logoNous from './img/logo-nous.png';
 import logoGrande from './img/logo-nous-grande.png';
 import Stefany from './img/Stefany.jpg';
@@ -29,22 +30,15 @@ const NousLandingPage = () => {
     return (
         <div className="bg-[#f3f1ed] text-[#2d2d2d] relative overflow-hidden">
             {/* Menu de Navegação */}
-            <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-                <div className="container mx-auto flex justify-between items-center px-4 h-20">
-                    <a href='#inicio'>
-                        <img
-                            src={logoNous}
-                            alt="Logo NOUS"
-                            className="h-36"
-                        />
-                    </a>
-                    <div className="space-x-6">
+            <nav className="fixed top-0 left-0 w-full bg-white z-50">
+                <div className="container mx-auto flex justify-between items-center h-20">
+                    <Navbar className="space-x-6 menu">
                         <a href="#inicio" className="hover:text-[#bb947e]">Início</a>
                         <a href="#sobre" className="hover:text-[#bb947e]">Sobre</a>
                         <a href="#profissionais" className="hover:text-[#bb947e]">Profissionais</a>
                         <a href="#missao" className="hover:text-[#bb947e]">Missão</a>
-                        <a href="#contato" className="bg-[#5e4031] text-white px-4 py-2 rounded hover:bg-[#c79165]">Agende</a>
-                    </div>
+                        <a href="#contato" className="bg-[#5e4031] text-white rounded hover:bg-[#c79165]">Agende</a>
+                    </Navbar>
                 </div>
             </nav>
 
@@ -162,22 +156,19 @@ const NousLandingPage = () => {
                         <div>
                             <h3 className="text-2xl font-semibold mb-4 text-[#5e4031]">Missão</h3>
                             <p>
-                                Promover saúde mental através de um atendimento humanizado,
-                                ético e personalizado, focando no bem-estar integral do indivíduo.
+                                Oferecer cuidado psicológico de excelência, promovendo o autoconhecimento, a saúde emocional e o bem-estar dos nossos clientes.
                             </p>
                         </div>
                         <div>
                             <h3 className="text-2xl font-semibold mb-4 text-[#5e4031]">Visão</h3>
                             <p>
-                                Ser referência em cuidados psicológicos, reconhecida pela
-                                excelência, empatia e compromisso com a transformação pessoal.
+                                Ser referência em saúde mental e atendimento psicológico, contribuindo para uma sociedade mais saudável e consciente.
                             </p>
                         </div>
                         <div>
                             <h3 className="text-2xl font-semibold mb-4 text-[#5e4031]">Valores</h3>
                             <p>
-                                Respeito, confidencialidade, escuta ativa, ética profissional,
-                                desenvolvimento humano e valorização da singularidade de cada ser.
+                                Empatia, ética, acolhimento, compromisso com a ciência, respeito à diversidade.
                             </p>
                         </div>
                     </div>
@@ -189,8 +180,7 @@ const NousLandingPage = () => {
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl font-bold mb-6">Entre em Contato</h2>
                     <p className="mb-4">
-                        Telefone: (XX) XXXX-XXXX<br />
-                        Email: contato@clinicanouspsi.com.br
+                        Telefone: (44) 99837-9833<br />Email: clinica.psi.nous@gmail.com<br />Endereço: Rua Rio jacui 310, Parque Residencial Tuiuti.<br />CEP: 87043160
                     </p>
                     <a
                         href="/formulario"

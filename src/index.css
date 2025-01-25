@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  .menu {
+    display: flex !important;
+  }
+}
+
 html,
 body {
   height: 100%;

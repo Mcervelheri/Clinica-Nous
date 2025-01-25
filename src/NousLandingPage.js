@@ -39,7 +39,7 @@ const NousLandingPage = () => {
 
             <section id="inicio" className="relative h-screen">
                 {/* Logo fixa no centro */}
-                <div className="inicio fixed inset-0 flex items-center bg-[#5e4031] justify-center z-10 pointer-events-none">
+                <div className="inicio fixed inset-0 flex items-center bg-[#c79165] justify-center z-10 pointer-events-none">
                     <div className='max-w-xl'>
                         <img
                             src={logoGrande}

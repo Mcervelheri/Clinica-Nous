@@ -13,13 +13,13 @@ const Navbar = () => {
                             <img
                                 src={logoNous}
                                 alt="Logo NOUS"
-                                className="h-36"
+                                className="h-16"
                             />
                         </a>
                     </div>
                     {/* Botão do menu hamburguer */}
                     <button
-                        className="md:hidden text-[#5e4031] focus:outline-none shadow-md"
+                        className="md:hidden text-[#5e4031] focus:outline-none shadow-md p-2"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         <svg

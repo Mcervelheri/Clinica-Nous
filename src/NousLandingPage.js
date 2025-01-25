@@ -31,26 +31,22 @@ const NousLandingPage = () => {
         <div className="bg-[#f3f1ed] text-[#2d2d2d] relative overflow-hidden">
             {/* Menu de Navegação */}
             <nav className="fixed top-0 left-0 w-full bg-white z-50">
-                <div className="container mx-auto flex justify-between items-center h-20">
-                    <Navbar className="space-x-6 menu">
-                        <a href="#inicio" className="hover:text-[#bb947e]">Início</a>
-                        <a href="#sobre" className="hover:text-[#bb947e]">Sobre</a>
-                        <a href="#profissionais" className="hover:text-[#bb947e]">Profissionais</a>
-                        <a href="#missao" className="hover:text-[#bb947e]">Missão</a>
-                        <a href="#contato" className="bg-[#5e4031] text-white rounded hover:bg-[#c79165]">Agende</a>
+                <div className="container mx-auto flex justify-between items-center">
+                    <Navbar>
                     </Navbar>
                 </div>
             </nav>
 
             <section id="inicio" className="relative h-screen">
                 {/* Logo fixa no centro */}
-                <div className="fixed inset-0 flex items-center bg-[#5e4031] justify-center z-10 pointer-events-none">
-
-                    <img
-                        src={logoGrande}
-                        alt="Logo NOUS em tamanho grande"
-                        className="max-w-xl opacity-80"
-                    />
+                <div className="inicio fixed inset-0 flex items-center bg-[#5e4031] justify-center z-10 pointer-events-none">
+                    <div className='max-w-xl'>
+                        <img
+                            src={logoGrande}
+                            alt="NOUS "
+                            className="img_inicio object-fit"
+                        />
+                    </div>
                     <p className="text-xl max-w-2xl text-black mx-auto">
                         Espaço dedicado ao cuidado e compreensão da saúde mental
                     </p>
@@ -69,18 +65,14 @@ const NousLandingPage = () => {
                 </div>
             </section>
 
-            <section id="Informacoes" className="relative bg-[#f3f1ed] py-16 z-20">
+            <section id="Informacoes" className="relative bg-[#f3f1ed] py-6 z-20">
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl font-bold mb-6 text-[#5e4031]">Publico atendido</h2>
                     <p className="max-w-2xl mx-auto text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies ipsum mauris. </p>
                     <br></br>
                     <h2 className="text-3xl font-bold mb-6 text-[#5e4031]">Horários</h2>
-                    <p>Segunda-feira das 08:00 às 18:00</p>
-                    <p>Terça-feira das 08:00 às 18:00</p>
-                    <p>Quarta-feira das 08:00 às 18:00</p>
-                    <p>Quinta-feira das 08:00 às 18:00</p>
-                    <p>Sexta-feira das 08:00 às 18:00</p>
-                    <p>Sabado das 08:00 às 18:00</p>
+                    <p>Segunda-feira à sexta 08:00 às 20:00</p>
+                    <p>Sabado das 08:00 às 12:00</p>
                 </div>
             </section>
 
@@ -90,12 +82,14 @@ const NousLandingPage = () => {
                     <h2 className="text-3xl font-bold mb-8 text-[#5e4031]">Profissionais</h2>
                     <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="bg-white shadow-lg rounded-lg p-6">
-                            <img
-                                src={Stefany}
-                                alt="Stefany C. Oliveira"
-                                className="w-full h-96 object-cover rounded-t-lg"
-                            />
-                            <h3 className="text-xl font-semibold my-4 text-[#5e4031]">Stefany C. Oliveira</h3>
+                            <div>
+                                <img
+                                    src={Stefany}
+                                    alt="Stefany Oliveira"
+                                    className="w-full img_meninas object-cover object-top rounded-t-lg"
+                                />
+                            </div>
+                            <h3 className="text-xl font-semibold my-4 text-[#5e4031]">Stefany Oliveira</h3>
                             <p className="mb-4">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies ipsum mauris. Nullam fermentum justo vel lacus dignissim sollicitudin. Etiam quis ante erat. Etiam eget ornare orci. Pellentesque molestie augue nec massa convallis, at tempus quam fermentum. Nunc ut placerat dui. Nulla at massa sit amet mauris tincidunt suscipit vehicula vitae libero.
                             </p>
@@ -105,12 +99,14 @@ const NousLandingPage = () => {
                         </div>
 
                         <div className="bg-white shadow-lg rounded-lg p-6">
-                            <img
-                                src={Tatiane}
-                                alt="Tatiane"
-                                className="w-full h-96 object-cover rounded-t-lg"
-                            />
-                            <h3 className="text-xl font-semibold my-4 text-[#5e4031]">Tatiane</h3>
+                            <div>
+                                <img
+                                    src={Tatiane}
+                                    alt="Tatiane"
+                                    className="w-full img_meninas object-cover object-top rounded-t-lg"
+                                />
+                            </div>
+                            <h3 className="text-xl font-semibold my-4 text-[#5e4031]">Tatiane Moreira</h3>
                             <p className="mb-4">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies ipsum mauris. Nullam fermentum justo vel lacus dignissim sollicitudin. Etiam quis ante erat. Etiam eget ornare orci. Pellentesque molestie augue nec massa convallis, at tempus quam fermentum. Nunc ut placerat dui. Nulla at massa sit amet mauris tincidunt suscipit vehicula vitae libero.
                             </p>
@@ -120,12 +116,14 @@ const NousLandingPage = () => {
                         </div>
 
                         <div className="bg-white shadow-lg rounded-lg p-6">
-                            <img
-                                src={Ketholy}
-                                alt="Modalidades de Atendimento"
-                                className="w-full h-96 object-cover rounded-t-lg"
-                            />
-                            <h3 className="text-xl font-semibold my-4 text-[#5e4031]">Kétholy R. Cervelheri</h3>
+                            <div>
+                                <img
+                                    src={Ketholy}
+                                    alt="Modalidades de Atendimento"
+                                    className="w-full object-cover object-top rounded-t-lg img_meninas"
+                                />
+                            </div>
+                            <h3 className="text-xl font-semibold my-4 text-[#5e4031]">Kétholy Cervelheri</h3>
                             <p className="mb-4">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies ipsum mauris. Nullam fermentum justo vel lacus dignissim sollicitudin. Etiam quis ante erat. Etiam eget ornare orci. Pellentesque molestie augue nec massa convallis, at tempus quam fermentum. Nunc ut placerat dui. Nulla at massa sit amet mauris tincidunt suscipit vehicula vitae libero.
                             </p>

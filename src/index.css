@@ -2,6 +2,27 @@
   .menu {
     display: flex !important;
   }
+
+  .img_meninas {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img_meninas {
+    height: 500px;
+  }
+
+  .inicio {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 570px) {
+  .inicio p {
+    text-align: center;
+    font-size: 14px;
+  }
 }
 
 html,

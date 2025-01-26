@@ -63,6 +63,14 @@ code {
     monospace;
 }
 
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

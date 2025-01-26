@@ -5,6 +5,10 @@ import Navbar from './components/HamburguerMenu';
 import logoNous from './img/logo-nous.png';
 import logoGrande from './img/logo-nous-grande.png';
 import Stefany from './img/Stefany.jpg';
+import instagram from './img/instagram.png';
+import whatsapp from './img/whatsapp.png';
+import email from './img/email.png';
+import endereco from './img/endereco.png';
 import Tatiane from './img/Tatiane.jpg';
 import Ketholy from './img/Ketholy.jpg';
 import textura01 from './img/textura01.png';
@@ -39,7 +43,7 @@ const NousLandingPage = () => {
 
             <section id="inicio" className="relative h-screen">
                 {/* Logo fixa no centro */}
-                <div className="inicio fixed inset-0 flex items-center bg-[#c79165] justify-center z-10 pointer-events-none">
+                <div className="inicio fixed inset-0 flex items-center bg-[#bb947e] justify-center z-10 pointer-events-none">
                     <div className='max-w-xl'>
                         <img
                             src={logoGrande}
@@ -48,7 +52,7 @@ const NousLandingPage = () => {
                         />
                     </div>
                     <p className="text-xl max-w-2xl text-black mx-auto">
-                        Espaço dedicado ao cuidado e compreensão da saúde mental
+                        Reconheça, compreenda, transforme-se.
                     </p>
                 </div>
             </section>
@@ -68,7 +72,7 @@ const NousLandingPage = () => {
             <section id="Informacoes" className="relative bg-[#f3f1ed] py-6 z-20">
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl font-bold mb-6 text-[#5e4031]">Publico atendido</h2>
-                    <p className="max-w-2xl mx-auto text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies ipsum mauris. </p>
+                    <p className="max-w-2xl mx-auto text-lg">Crianças, adolescentes e adultos.</p>
                     <br></br>
                     <h2 className="text-3xl font-bold mb-6 text-[#5e4031]">Horários</h2>
                     <p>Segunda-feira à sexta 08:00 às 20:00</p>
@@ -91,10 +95,16 @@ const NousLandingPage = () => {
                             </div>
                             <h3 className="text-xl font-semibold my-4 text-[#5e4031]">Stefany Oliveira</h3>
                             <p className="mb-4">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies ipsum mauris. Nullam fermentum justo vel lacus dignissim sollicitudin. Etiam quis ante erat. Etiam eget ornare orci. Pellentesque molestie augue nec massa convallis, at tempus quam fermentum. Nunc ut placerat dui. Nulla at massa sit amet mauris tincidunt suscipit vehicula vitae libero.
+                                (CRP - 08/41494)
+                                <br></br>
+                                <br></br>
+                                Como profissional da saúde mental, minha missão é ajudar você a superar desafios emocionais e comportamentais, promovendo bem-estar e qualidade de vida. Trabalho com a Terapia Cognitivo-Comportamental (TCC).
+                                <br></br>
+                                <br></br>
+                                Se você busca autoconhecimento e autocuidado, estou aqui para te acompanhar nesse processo de transformação. Juntos, podemos construir estratégias para lidar com suas questões.
                             </p>
                             <a href="#contato" className="text-[#5e4031] hover:underline">
-                                Agende uma consulta
+                                Agende sua sessão
                             </a>
                         </div>
 
@@ -111,7 +121,7 @@ const NousLandingPage = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies ipsum mauris. Nullam fermentum justo vel lacus dignissim sollicitudin. Etiam quis ante erat. Etiam eget ornare orci. Pellentesque molestie augue nec massa convallis, at tempus quam fermentum. Nunc ut placerat dui. Nulla at massa sit amet mauris tincidunt suscipit vehicula vitae libero.
                             </p>
                             <a href="#contato" className="text-[#5e4031] hover:underline">
-                                Agende uma consulta
+                                Agende sua sessão
                             </a>
                         </div>
 
@@ -128,7 +138,7 @@ const NousLandingPage = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies ipsum mauris. Nullam fermentum justo vel lacus dignissim sollicitudin. Etiam quis ante erat. Etiam eget ornare orci. Pellentesque molestie augue nec massa convallis, at tempus quam fermentum. Nunc ut placerat dui. Nulla at massa sit amet mauris tincidunt suscipit vehicula vitae libero.
                             </p>
                             <a href="#contato" className="text-[#5e4031] hover:underline">
-                                Agende uma consulta
+                                Agende sua sessão
                             </a>
                         </div>
                     </div>
@@ -174,18 +184,74 @@ const NousLandingPage = () => {
             </section>
 
             {/* Rodapé / Contato */}
-            <footer id="contato" className="bg-[#2d2d2d] text-white py-12 mt-auto relative z-20">
+            <footer id="contato" className="bg-[#5e4031] text-white pt-6 mt-auto relative z-20">
                 <div className="container mx-auto text-center">
-                    <h2 className="text-3xl font-bold mb-6">Entre em Contato</h2>
-                    <p className="mb-4">
-                        Telefone: (44) 99837-9833<br />Email: clinica.psi.nous@gmail.com<br />Endereço: Rua Rio jacui 310, Parque Residencial Tuiuti.<br />CEP: 87043160
-                    </p>
-                    <a
-                        href="/formulario"
-                        className="bg-[#5e4031] text-white px-6 py-3 rounded-lg hover:bg-[#c79165]"
-                    >
-                        Agende sua Consulta
-                    </a>
+                    <div>
+                        <h2 className="text-3xl font-bold mb-6">Entre em Contato</h2>
+                        <p className="mb-4">
+                            <a
+                                href="https://www.instagram.com/clinicapsiconous"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-center"
+                            >
+                                <img src={instagram} alt='instagram' className='m-2'></img>
+                                @clinicapsiconous
+                            </a>
+                            <a
+                                href="https://wa.me/554498379833"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-center"
+                            >
+                                <img src={whatsapp} alt='whatsapp' className='m-2'></img>
+                                Telefone: (44) 99837-9833
+                            </a>
+                            <div className="flex items-center justify-center">
+                                <img src={email} alt='email' className='m-2'></img>
+                                Email: clinica.psi.nous@gmail.com
+                            </div>
+                            <a
+                                href="https://maps.app.goo.gl/mNjhGvmNRAyKF6jt9"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-center"
+                            >
+                                <img src={endereco} alt='endereço' className='m-2'></img>
+                                Endereço: Rua Rio Jacuí 310, Parque Residencial Tuiuti.
+                            </a>
+                            <a
+                                href="https://maps.app.goo.gl/mNjhGvmNRAyKF6jt9"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-center"
+                            >
+                                CEP: 87043160
+                            </a>
+                        </p>
+                        <a
+                            href="/formulario"
+                            className="bg-[#bb947e] text-white px-6 py-3 rounded-lg hover:bg-[#c79165]"
+                        >
+                            Agende sua sessão
+                        </a>
+                    </div>
+                    <div className="map-container mt-6 flex justify-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.7272371990225!2d-51.90296751489406!3d-23.39808284194116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd10509058b2f%3A0x8e8996fb5f8ad129!2sR.%20Rio%20Jacu%C3%AD%2C%20310%20-%20Conj.%20Res.%20Branca%20Vieira%2C%20Maring%C3%A1%20-%20PR%2C%2087043-160!5e0!3m2!1spt-BR!2sbr!4v1737847076201!5m2!1spt-BR!2sbr"
+                            width="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </div>
+
+                {/* Rodapé inferior */}
+                <div className="bg-[#bb947e] text-white text-center mt-6">
+                    <p>&copy; 2025 Todos os direitos reservados.</p>
+                    <p>Desenvolvido por: Matheus Cervelheri</p>
                 </div>
             </footer>
 

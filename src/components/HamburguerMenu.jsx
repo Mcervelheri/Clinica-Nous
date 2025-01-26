@@ -60,7 +60,7 @@ const Navbar = () => {
                         </a>
                         <a
                             href="#contato"
-                            className="block bg-[#5e4031] text-white px-4 py-2 rounded hover:bg-[#c79165]"
+                            className="block bg-[#bb947e] text-white px-4 py-2 rounded hover:bg-[#c79165]"
                         >
                             Agende
                         </a>
